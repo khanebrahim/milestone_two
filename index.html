@@ -44,6 +44,28 @@
             color:red;
         }
 */
+
+        h1::before{
+            content: "Hello";
+            color:rgb(226, 43, 43);
+            font-size: 34px;
+
+        }
+
+        .special-effect::after{
+            content: "Bye";
+            font-size: 15px;
+            background-color:greenyellow;
+
+
+        }
+/* increment the value of p tag*/
+        p::before{
+            counter-increment: section;
+            content: "Crush " counter(section) ": ";
+        }
+
+
     </style>
 
 
@@ -53,8 +75,8 @@
 <!--header tag-->
 
     <h1>Present</h1>
-    <h1>Perfect</h1>
-    <h1 class="special">Future</h1>
+    <h1 class="special-effect">Perfect</h1>
+    <h1 class="special-effect">Future</h1>
  <!--input email and password-->   
     <input name="email" type="text">
     <br>
@@ -68,15 +90,24 @@
 
 
 <!--List -->
-    <ul>
-        <li>shakib</li>
-        <li>mushi</li>
-        <li>mash</li>
-        <li>tamim</li>
-        <li>sadi</li>
-        <li>parvej</li>
-        <li>yousuf</li>
-    </ul>
+      
+
+   <p>Alia</p>
+
+   <p>jalia</p>
+   <p>maliya</p>
+   <p>faliya</p>
+   <p>dariya</p>
+   <p>fabiya</p>
+   <p>samanta</p>
+    
+
+
+
+
+
+
+   
     
 </body>
 </html>
